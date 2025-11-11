@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navi" style="background-color: #8B0000; padding: 15px; text-align: center;">
+            <a href="main.html" class="nav-link"  style="color: white; margin: 0 10px; text-decoration: none;">Главная</a>
+            <a href="genres.html" class="nav-link" style="color: white; margin: 0 10px; text-decoration: none;">По жанрам</a>
+            <a href="https://www.kinopoisk.ru" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;"">Кинопоиск</a>
+            <a href="passport.html" class="nav-link" style="color: white; margin: 0 10px; text-decoration: none;"">Паспорт</a>
+            <a href="alg.html" class="nav-link" style="color: lightgray; margin: 0 10px; text-decoration: none; font-weight: bold;"">Задача</a>
+            <a href="form.html" target="_self"><img height="50px" src="./pics/form pic.png"></a>
+        </nav>
+    </header>
+    
+    <h2>Формулировка задачи</h2>
+        <a>Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H и радиусом основания R. Определить, можно ли заполнить жидкостью объёма M первую ёмкость, вторую, обе.</a>
+    
+    <h3>Введите параметры</h3>
+    <form id="containerForm">
+        <label>Ребро куба (A): <input type="number" id="cubeEdge" step="any" required></label><br><br>
+        <label>Радиус цилиндра (R): <input type="number" id="cylRadius" step="any" required></label><br><br>
+        <label>Высота цилиндра (H): <input type="number" id="cylHeight" step="any" required></label><br><br>
+        <label>Объём жидкости (M): <input type="number" id="volumeM" step="any" required></label><br><br>
+        <button type="submit">Проверить</button>
+    </form>
+
+    <h3>Результат:</h3>
+    <p id="result"></p>
+
+    <script src="./DOM_JS/alg.js"></script>
+
+</body>
+
+</html>

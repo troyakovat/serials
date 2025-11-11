@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+      <title>DOM_JS. Считываем информацию из DOM</title>
+      <link rel="stylesheet" href="./css/main.css">
+   </head>
+   <body>
+
+    <header>
+        <nav id="navi" style="background-color: #8B0000; padding: 15px; text-align: center;">
+            <a href="main.html" class="nav-link"  style="color: white; margin: 0 10px; text-decoration: none;">Главная</a>
+            <a href="genres.html" class="nav-link" style="color: white; margin: 0 10px; text-decoration: none;">По жанрам</a>
+            <a href="https://www.kinopoisk.ru" target="_blank" style="color: white; margin: 0 10px; text-decoration: none;"">Кинопоиск</a>
+            <a href="passport.html" class="nav-link" style="color: lightgray; margin: 0 10px; text-decoration: none; font-weight: bold;"">Паспорт</a>
+            <a href="alg.html" class="nav-link" style="color: white; margin: 0 10px; text-decoration: none;"">Задача</a>
+            <a href="form.html" target="_self"><img height="50px" src="./pics/form pic.png"></a>
+        </nav>
+    </header>
+
+     
+   <table>
+      <tr>
+         <td>
+   <table border="1" width="500px">
+      <tr>
+         <td colspan="2" align="center" height="100px">Российская Федерация</td>
+      </tr>
+      <tr>
+         <td colspan="2">Паспорт выдан <span id="vydan">МВД ПО РЕСПУБЛИКЕ ХАКАСИЯ<span> </td>
+      </tr>
+      <tr>
+
+         <td height="100px">Дата выдачи <span id="vydan_date">15.03.2021</span></td>
+         
+         <td>Код подразделения <span id="kod">111-111</span></td>
+         <tr>
+            <td colspan="2" align="right" height="40px">Личный код <span id="lichny_kod">153</span></td>
+         </tr>
+         <tr>
+            <td colspan="2" align ="left" height="40px">Подпись сотрудника  <span id="podpis"><img src="./pics/sign s.png" height="40px"></span></td>
+         </tr>
+         <tr>
+            <td colspan="2" align="right" height="40px">Личная подпись  <span id="lichnaya_podpis"><img src="./pics/sign m.png" height="30px"></span></td>
+         </tr>
+
+      </tr>
+   </table>
+
+   <table border="1" width="500px">
+      <tr>
+         <td><img src="./pics/girl.jpeg" height="100px"></td>
+         <td>
+            <table border="1">
+               <tr>
+                  <td colspan="2">Фамилия: <span id="surname">Троякова</span> </td>
+               </tr>
+               <tr>
+                  <td colspan="2">Имя:<span id="name"> Тайана</span></td>
+               </tr>
+               <tr>
+                  <td colspan="2">Отчество:<span id="second_name"> Александровна</span></td>
+               </tr>
+               <tr>
+                  <td>Пол:<span id="sex"> ЖЕН.</span></td>
+                  <td>Дата рождения: <span id="date_of_birth"> 15.03.2007</span></td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+      
+   </table>
+   </td>
+   <td>
+            <img src="./pics/dom.png" height="800px">
+   </td>
+   </tr>
+   </table>   
+
+   <p>Чтобы изменить имя и фамилию на латиницу, нажмите на кнопку:</p>
+         
+   <p><input type ="button" value="change" id="change" style="background: #8b0000; color:white; border:none; border-radius: 4px; 
+               padding:10px 20px; font-size:16px; cursor:pointer;"></p>
+      
+      <script src="./DOM_JS/pass.js"></script>
+
+</body>
+</html>
